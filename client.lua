@@ -7,7 +7,6 @@ exports.ox_target:addBoxZone({
 	rotation = 358.0,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -33,7 +32,6 @@ exports.ox_target:addBoxZone({
 	rotation = 21.25,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -59,7 +57,6 @@ exports.ox_target:addBoxZone({
 	rotation = 350.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -85,7 +82,6 @@ exports.ox_target:addBoxZone({
 	rotation = 280.25,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -111,7 +107,6 @@ exports.ox_target:addBoxZone({
 	rotation = 4.25,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -137,7 +132,6 @@ exports.ox_target:addBoxZone({
 	rotation = 321.0,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -162,7 +156,6 @@ exports.ox_target:addBoxZone({
 	rotation = 0.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -187,7 +180,6 @@ exports.ox_target:addBoxZone({
 	rotation = 355.25,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -212,7 +204,6 @@ exports.ox_target:addBoxZone({
 	rotation = 327.25,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -237,7 +228,6 @@ exports.ox_target:addBoxZone({
 	rotation = 306.75,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -262,7 +252,6 @@ exports.ox_target:addBoxZone({
 	rotation = 0.75,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -287,7 +276,6 @@ exports.ox_target:addBoxZone({
 	rotation = 338.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
@@ -314,7 +302,6 @@ exports.ox_target:addBoxZone({
 	rotation = 16.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -339,7 +326,6 @@ exports.ox_target:addBoxZone({
 	rotation = 355.25,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -364,7 +350,6 @@ exports.ox_target:addBoxZone({
 	rotation = 345.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -389,7 +374,6 @@ exports.ox_target:addBoxZone({
 	rotation = 11.75,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -414,7 +398,6 @@ exports.ox_target:addBoxZone({
 	rotation = 0.0,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -439,7 +422,6 @@ exports.ox_target:addBoxZone({
 	rotation = 355.0,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -464,7 +446,6 @@ exports.ox_target:addBoxZone({
 	rotation = 319.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -489,7 +470,6 @@ exports.ox_target:addBoxZone({
 	rotation = 0.0,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -514,7 +494,6 @@ exports.ox_target:addBoxZone({
 	rotation = 358.0,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -539,7 +518,6 @@ exports.ox_target:addBoxZone({
 	rotation = 331.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -564,7 +542,6 @@ exports.ox_target:addBoxZone({
 	rotation = 31.25,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -589,7 +566,6 @@ exports.ox_target:addBoxZone({
 	rotation = 8.0,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -614,7 +590,6 @@ exports.ox_target:addBoxZone({
 	rotation = 65.5,
     options = {
 		{
-			event = "srp-jobs:china:startjob",
 			icon = 'fa-solid fa-lock',
 			label = "Crack Safe",
             canInteract = function(entity, distance, coords, name)
@@ -637,9 +612,8 @@ exports.ox_target:addBoxZone({
 
 RegisterNetEvent('StoreRobbery')
 AddEventHandler('StoreRobbery', function()
-    local policeCount = GlobalState.police
+    local policeCount = GlobalState.police or 0
     local state = GlobalState.GettingRobbed
-    print(state)
     if state == false then
         if policeCount >= 1 then
             local skillcheck = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy','easy', 'easy', 'easy', 'easy', 'easy'})
@@ -655,7 +629,6 @@ AddEventHandler('StoreRobbery', function()
                 then 
                     TriggerServerEvent("FinishRobbery")
                     TriggerEvent('un-dispatch:storerobbery')
-                    DeleteEntity(GrabBag)
                 else 
                     -- TriggerServerEvent("FailRobbery")
                 end 
@@ -684,13 +657,11 @@ end)
 
 RegisterNetEvent('SafeRobbery')
 AddEventHandler('SafeRobbery', function()
-    lib.hideTextUI()
-    local policeCount = GlobalState.police
+    local policeCount = GlobalState.police or 0
     if policeCount >= 1 then
         TriggerEvent('ultra-voltlab', 37, function(result,reason)
             if outcome == 0 then
-                TriggerServerEvent("FailRobbery")
-                lib.hideTextUI()
+                TriggerServerEvent("FailRobbery")      
             elseif outcome == 1 then
                 if lib.progressBar({
                     duration = 20000, 
@@ -702,21 +673,17 @@ AddEventHandler('SafeRobbery', function()
                 then 
                     TriggerServerEvent("FinishSafeRobbery")
                     TriggerEvent('un-dispatch:storerobbery')
-                    lib.hideTextUI()
                 else 
                     -- TriggerServerEvent("FailRobbery")
-                    lib.hideTextUI()
                 end 
             elseif outcome == 2 then
                 TriggerServerEvent("FailRobbery")
-                lib.hideTextUI()
+        
             elseif outcome == -1 then
                 TriggerServerEvent("FailRobbery")
-                lib.hideTextUI()
             end
         end)
     else
-        lib.hideTextUI()
         lib.notify({
             id = 'some_identifier',
             title = 'Notifcation',
