@@ -628,7 +628,7 @@ AddEventHandler('StoreRobbery', function()
                     anim = {dict = 'anim@heists@ornate_bank@grab_cash', clip = 'grab'},  flag = 3})
                 then 
                     TriggerServerEvent("FinishRobbery")
-                    TriggerEvent('un-dispatch:storerobbery')
+                     -- dispatch script
                 else 
                     -- TriggerServerEvent("FailRobbery")
                 end 
@@ -672,7 +672,7 @@ AddEventHandler('SafeRobbery', function()
                     anim = {dict = 'anim@heists@ornate_bank@grab_cash', clip = 'grab'},  flag = 3})
                 then 
                     TriggerServerEvent("FinishSafeRobbery")
-                    TriggerEvent('un-dispatch:storerobbery')
+                    -- dispatch script
                 else 
                     -- TriggerServerEvent("FailRobbery")
                 end 
