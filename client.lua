@@ -632,8 +632,6 @@ AddEventHandler('StoreRobbery', function()
                 else 
                     -- TriggerServerEvent("FailRobbery")
                 end 
-                DeleteEntity(GrabBag)
-                SetEntityAsNoLongerNeeded(GrabBag)
             else
                 TriggerServerEvent("FailRobbery")
             end
