@@ -1,10 +1,15 @@
 # ostorerobbery
 First store robbery script
 -item requirements
+
 -global timer
+
 -random item rewards
+
 -ox_lib skillcheck on the cash register
+
 -entirely using target system
+
 -voltlab hack for safes
 ```
 Uses
