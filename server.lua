@@ -1,7 +1,7 @@
 GlobalState.GettingRobbed = false
 
 RegisterNetEvent('FinishRobbery')
-AddEventHandler('FinishtRobbery', function()
+AddEventHandler('FinishRobbery', function()
 	local cashMoney = math.random(200, 500)
 	local chance = math.random(1, 10)
 	exports.ox_inventory:RemoveItem(source, 'advanced_lockpick', 1)
