@@ -1,4 +1,4 @@
---cashier zones
+=--cashier zones
 
 exports.ox_target:addBoxZone({
 	name = "storecr1",
@@ -628,7 +628,7 @@ AddEventHandler('StoreRobbery', function()
                     anim = {dict = 'anim@heists@ornate_bank@grab_cash', clip = 'grab'},  flag = 3})
                 then 
                     TriggerServerEvent("FinishRobbery")
-                     -- dispatch script
+                    TriggerEvent('un-dispatch:storerobbery')
                 else 
                     -- TriggerServerEvent("FailRobbery")
                 end 
@@ -658,9 +658,9 @@ AddEventHandler('SafeRobbery', function()
     local policeCount = GlobalState.police or 0
     if policeCount >= 1 then
         TriggerEvent('ultra-voltlab', 37, function(result,reason)
-            if outcome == 0 then
+            if result == 0 then
                 TriggerServerEvent("FailRobbery")      
-            elseif outcome == 1 then
+            elseif result == 1 then
                 if lib.progressBar({
                     duration = 20000, 
                     label = 'Robbing Safe', 
@@ -670,14 +670,14 @@ AddEventHandler('SafeRobbery', function()
                     anim = {dict = 'anim@heists@ornate_bank@grab_cash', clip = 'grab'},  flag = 3})
                 then 
                     TriggerServerEvent("FinishSafeRobbery")
-                    -- dispatch script
+                    TriggerEvent('un-dispatch:storerobbery')
                 else 
                     -- TriggerServerEvent("FailRobbery")
                 end 
-            elseif outcome == 2 then
+            elseif result == 2 then
                 TriggerServerEvent("FailRobbery")
         
-            elseif outcome == -1 then
+            elseif result == -1 then
                 TriggerServerEvent("FailRobbery")
             end
         end)
@@ -701,7 +701,7 @@ end)
 AddEventHandler('esx:onPlayerSpawn', function()
     local count = exports.ox_inventory:Search('count', 'largebag')
     if count >= 1 then
-        SetPedComponentVariation(cache.ped, 5, 82, 2, 0);
+        SetPedComponentVariation(cache.ped, 5, 82, 0, 0);
     end
 end)
 
