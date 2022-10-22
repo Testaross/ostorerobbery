@@ -27,19 +27,5 @@ This is the bag component I require for the robbery to stash the money
 		weight = 220,
 		stack = false,
 		consume = 0,
-		client = {
-			add = function(total)
-				if total > 0 then
-					SetPedComponentVariation(cache.ped, 5, 82, 2, 0);
-				end
-			end,
-	
-			remove = function(total)
-				if total < 1 then
-				print('thefuck')
-					SetPedComponentVariation(cache.ped, 5, 0, 2, 0);
-				end
-			end
-		}
 	},
   ```
