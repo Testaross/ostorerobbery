@@ -698,10 +698,12 @@ AddEventHandler('SafeRobbery', function()
     end
 end)
 
-AddEventHandler('esx:onPlayerSpawn', function()
+AddEventHandler('ox_inventory:updateInventory', function(changes)
     local count = exports.ox_inventory:Search('count', 'largebag')
-    if count >= 1 then
+    if count > 0 then
         SetPedComponentVariation(cache.ped, 5, 82, 0, 0);
+    else
+        SetPedComponentVariation(cache.ped, 5, 0, 0, 0);
     end
 end)
 
