@@ -1,4 +1,3 @@
-=--cashier zones
 
 exports.ox_target:addBoxZone({
 	name = "storecr1",
