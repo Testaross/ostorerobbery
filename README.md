@@ -19,13 +19,4 @@ Uses
 -ultra-voltlab
 -lindens snippet for police count(https://gist.github.com/thelindat/93311a4fd6ea6c1d4427438a533e228c)
 ```
-This is the bag component I require for the robbery to stash the money
 
-```
-	['largebag'] = {
-		label = 'Large Duffle Bag',
-		weight = 220,
-		stack = false,
-		consume = 0,
-	},
-  ```
