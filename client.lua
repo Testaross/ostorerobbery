@@ -35,8 +35,8 @@ exports.ox_target:addBoxZone({
 			label = "Rob Store",
             canInteract = function(entity, distance, coords, name)
                 local hasPick = exports.ox_inventory:Search('count', 'advanced_lockpick')
-                local hasBag = exports.ox_inventory:Search('count', 'largebag')
-                if hasPick and hasBag >= 1 then
+        
+                if hasPick >= 1 then
                     return true
                 else
                     return false
@@ -697,12 +697,4 @@ AddEventHandler('SafeRobbery', function()
     end
 end)
 
-AddEventHandler('ox_inventory:updateInventory', function(changes)
-    local count = exports.ox_inventory:Search('count', 'largebag')
-    if count > 0 then
-        SetPedComponentVariation(cache.ped, 5, 82, 0, 0);
-    else
-        SetPedComponentVariation(cache.ped, 5, 0, 0, 0);
-    end
-end)
 
