@@ -1,6 +1,8 @@
 # ostorerobbery
 First store robbery script
 
+-supporst police count for ND_Core and ESX
+
 -support gabz stores and vanilla
 
 -item requirements
