@@ -2,9 +2,10 @@
 
     function PerformSkillCheck()
         local skillcheck = false
+        print
         if Config.registerSkill == 'ox_lib' then
             skillcheck = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy'})
-        elseif Config.registerSkill == 'psui' then
+        elseif Config.registerSkill == 'ps-ui' then
             exports['ps-ui']:Scrambler(function(success)
                 skillcheck = success
             end, "numeric", 30, 0)
@@ -23,6 +24,7 @@
     AddEventHandler('StoreRobbery', function()
         local policeCount = GlobalState.police or 0
         local state = GlobalState.GettingRobbed
+        print(policeCount)
         if state == false then
             if policeCount >= Config.policeCount then
                 local skillcheck = PerformSkillCheck()
@@ -68,7 +70,7 @@
 
         if Config.registerSkill == 'ox_lib' then
             skillchecksafe = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy'})
-        elseif Config.registerSkill == 'psui' then
+        elseif Config.registerSkill == 'ps-ui' then
             exports['ps-ui']:Maze(function(success)
                 if success then
                     skillchecksafe = success
