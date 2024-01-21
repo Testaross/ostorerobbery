@@ -3,7 +3,7 @@
     function PerformSkillCheck()
         local skillcheck = false
         if Config.registerSkill == 'ox_lib' then
-            skillcheck = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy'})
+            skillcheck = lib.skillCheck({'easy', 'easy', {areaSize = 60, speedMultiplier = 1}, 'medium'}, {'w', 'a', 's', 'd'})
         elseif Config.registerSkill == 'ps-ui' then
             exports['ps-ui']:Scrambler(function(success)
                 skillcheck = success
@@ -23,7 +23,6 @@
     AddEventHandler('StoreRobbery', function()
         local policeCount = GlobalState.police or 0
         local state = GlobalState.GettingRobbed
-        print(policeCount)
         if state == false then
             if policeCount >= Config.policeCount then
                 local skillcheck = PerformSkillCheck()
@@ -66,24 +65,24 @@
 
     function PerformSkillCheckSafe()
         local skillchecksafe = false
-
-        if Config.registerSkill == 'ox_lib' then
+        if Config.safeSkill == 'ox_lib' then
             skillchecksafe = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy'})
-        elseif Config.registerSkill == 'ps-ui' then
+        elseif Config.safeSkill == 'ps-ui' then
             exports['ps-ui']:Maze(function(success)
                 if success then
                     skillchecksafe = success
                 end
             end, 20) -- Hack Time Limit
-        elseif Config.registerSkill == 'boii' then
-            exports['boii_minigames']:wire_cut({
-                style = 'default',
-                timer = 60000
+        elseif Config.safeSkill == 'boii' then
+            exports['boii_minigames']:safe_crack({
+                style = 'default', 
+                difficulty = 5 
             }, function(success)
-                skillchecksafe = success
+                if success then
+                    skillchecksafe = success
+                end
             end)
         end
-
         return skillchecksafe
     end
 
