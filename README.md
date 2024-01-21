@@ -1,7 +1,7 @@
 # ostorerobbery
-First store robbery script
+second store robbery script
 
--supporst police count for ND_Core and ESX
+-supports police count for ND_Core and ESX
 
 -support gabz stores and vanilla
 
