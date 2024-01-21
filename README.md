@@ -1,8 +1,7 @@
 # ostorerobbery
 First store robbery script
 
-Join my discord!
-https://discord.gg/bJSW7k4aAP
+-support gabz stores and vanilla
 
 -item requirements
 
