@@ -2,7 +2,6 @@
 
     function PerformSkillCheck()
         local skillcheck = false
-        print
         if Config.registerSkill == 'ox_lib' then
             skillcheck = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy'})
         elseif Config.registerSkill == 'ps-ui' then
