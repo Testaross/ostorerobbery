@@ -53,7 +53,7 @@ local function getPoliceOnline()
 end
 
 --policecount
-if Config.framework = 'esx' then
+if Config.framework == 'esx' then
 	ESX = exports["es_extended"]:getSharedObject()
 	local count = #ESX.GetExtendedPlayers('job', 'police')
 	Globalstate.police = count
