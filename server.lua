@@ -57,8 +57,11 @@ if Config.framework = 'esx' then
 	ESX = exports["es_extended"]:getSharedObject()
 	local count = #ESX.GetExtendedPlayers('job', 'police')
 	Globalstate.police = count
-elseif Config.framework = 'nd' then
+elseif Config.framework == 'nd' then
 	Globalstate.police = getPoliceOnline()
-elseif Config.framerwork == 'ox' then
+elseif Config.framework == 'ox' then
 	--coming soon
+elseif Config.framework == 'qb-core' then
+	local QBCore = exports['qb-core']:GetCoreObject()
+	Globalstate.police = QBCore.Functions.GetDutyCount('police')
 end 
