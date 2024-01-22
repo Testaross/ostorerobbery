@@ -1,6 +1,4 @@
 GlobalState.GettingRobbed = false
-local NDCore = exports["ND_Core"]
-local ESX = exports["es_extended"]:getSharedObject()
 
 RegisterNetEvent('FinishRobbery')
 AddEventHandler('FinishRobbery', function()
@@ -53,11 +51,12 @@ local function getPoliceOnline()
 end
 
 --policecount
-if Config.framework == 'esx' then
+if Config.framework = 'esx' then
 	ESX = exports["es_extended"]:getSharedObject()
 	local count = #ESX.GetExtendedPlayers('job', 'police')
 	Globalstate.police = count
 elseif Config.framework == 'nd' then
+	local NDCore = exports["ND_Core"]
 	Globalstate.police = getPoliceOnline()
 elseif Config.framework == 'ox' then
 	--coming soon
