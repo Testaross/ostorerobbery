@@ -1,5 +1,6 @@
 GlobalState.GettingRobbed = false
 
+
 RegisterNetEvent('FinishRobbery')
 AddEventHandler('FinishRobbery', function()
 	local cashMoney = Config.cashPayout
@@ -39,6 +40,7 @@ function TimerThread()
 end
 
 local function getPoliceOnline()
+	local NDCore = exports["ND_Core"]
     local amount = 0
     local policeDepartments = {"sahp", "lspd", "bcso"}
     local players = NDCore.getPlayers()
@@ -51,16 +53,16 @@ local function getPoliceOnline()
 end
 
 --policecount
-if Config.framework = 'esx' then
+if Config.framework == 'esx' then
 	ESX = exports["es_extended"]:getSharedObject()
 	local count = #ESX.GetExtendedPlayers('job', 'police')
-	Globalstate.police = count
+	GlobalState.police = count
 elseif Config.framework == 'nd' then
 	local NDCore = exports["ND_Core"]
-	Globalstate.police = getPoliceOnline()
+	GlobalState.police = getPoliceOnline()
 elseif Config.framework == 'ox' then
 	--coming soon
 elseif Config.framework == 'qb-core' then
 	local QBCore = exports['qb-core']:GetCoreObject()
-	Globalstate.police = QBCore.Functions.GetDutyCount('police')
+	GlobalState.police = QBCore.Functions.GetDutyCount('police')
 end 
