@@ -66,7 +66,7 @@
     function PerformSkillCheckSafe()
         local skillchecksafe = false
         if Config.safeSkill == 'ox_lib' then
-            skillchecksafe = lib.skillCheck({'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy', 'easy'})
+            skillchecksafe = lib.skillCheck({'easy', 'easy', {areaSize = 60, speedMultiplier = 1}, 'medium'}, {'w', 'a', 's', 'd'})
         elseif Config.safeSkill == 'ps-ui' then
             exports['ps-ui']:Maze(function(success)
                 if success then
